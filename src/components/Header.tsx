@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,65 +31,61 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-        isScrolled ? 'bg-background/95 backdrop-blur-md shadow-card' : 'bg-transparent'
-      }`}
+      className={`header ${isScrolled ? 'scrolled' : 'transparent'}`}
     >
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-gradient">
+      <div className="header-container">
+        <div className="header-content">
+          <div className="header-logo">
             Portfolio
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="desktop-nav">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-foreground hover:text-primary transition-smooth font-medium"
+                className="nav-button"
               >
                 {item.name}
               </button>
             ))}
-            <Button 
+            <button 
               onClick={() => scrollToSection('#contact')}
-              className="gradient-primary text-white font-medium"
+              className="contact-button"
             >
               ติดต่องาน
-            </Button>
+            </button>
           </nav>
 
           {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="sm"
-            className="md:hidden"
+          <button
+            className="mobile-menu-button"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
+          </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 py-4 bg-background rounded-lg shadow-card">
+          <nav className="mobile-nav">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-4 py-2 text-foreground hover:text-primary transition-smooth"
+                className="mobile-nav-button"
               >
                 {item.name}
               </button>
             ))}
-            <div className="px-4 pt-2">
-              <Button 
+            <div className="mobile-contact-container">
+              <button 
                 onClick={() => scrollToSection('#contact')}
-                className="w-full gradient-primary text-white"
+                className="mobile-contact-button"
               >
                 ติดต่องาน
-              </Button>
+              </button>
             </div>
           </nav>
         )}
