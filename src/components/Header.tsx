@@ -36,7 +36,7 @@ const Header = () => {
       <div className="header-container">
         <div className="header-content">
           <div className="header-logo">
-            SportFolio
+            H3SPORT
           </div>
 
           {/* Desktop Navigation */}
@@ -54,7 +54,7 @@ const Header = () => {
               onClick={() => scrollToSection('#contact')}
               className="contact-button"
             >
-              ติดต่อทีม
+              ติดต่อเรา
             </button>
           </nav>
 
@@ -84,7 +84,7 @@ const Header = () => {
                 onClick={() => scrollToSection('#contact')}
                 className="mobile-contact-button"
               >
-                ติดต่อทีม
+                ติดต่อเรา
               </button>
             </div>
           </nav>

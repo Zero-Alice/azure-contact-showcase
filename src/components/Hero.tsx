@@ -31,14 +31,14 @@ const Hero = () => {
       <div className="container mx-auto px-4 text-center text-white relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            สวัสดี ฉันคือ
-            <span className="block text-white/90">นักกีฬา</span>
+            ยินดีต้อนรับสู่
+            <span className="block text-white/90">H3SPORT</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed animate-fade-in-delay">
-            ผู้เชี่ยวชาญด้านกีฬาและการฝึกซ้อม มุ่งมั่นสู่ความเป็นเลิศ
+            แบรนด์กีฬาที่มุ่งมั่นสร้างสรรค์ผลิตภัณฑ์และบริการด้านกีฬาที่มีคุณภาพ
             <br />
-            พร้อมสร้างแรงบันดาลใจและเป็นต้นแบบที่ดีให้กับนักกีฬารุ่นใหม่
+            เพื่อส่งเสริมการออกกำลังกายและการกีฬาอย่างยั่งยืน
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in-delay-2">
@@ -47,7 +47,7 @@ const Hero = () => {
               onClick={scrollToPortfolio}
               className="bg-white text-primary hover:bg-white/90 font-medium px-8 py-3 text-lg transition-bounce"
             >
-              ดูผลงาน
+              ดูผลิตภัณฑ์
               <ArrowDown className="ml-2 h-5 w-5" />
             </Button>
             
@@ -57,7 +57,7 @@ const Hero = () => {
               onClick={scrollToContact}
               className="border-white text-white hover:bg-white hover:text-primary font-medium px-8 py-3 text-lg transition-bounce"
             >
-              ติดต่อทีม
+              ติดต่อเรา
             </Button>
             
             <Button 
@@ -66,22 +66,22 @@ const Hero = () => {
               className="border-white text-white hover:bg-white hover:text-primary font-medium px-8 py-3 text-lg transition-bounce"
             >
               <Download className="mr-2 h-5 w-5" />
-              ข้อมูลนักกีฬา
+              แคตตาล็อก
             </Button>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center animate-fade-in-delay-3">
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-glow">
-              <h3 className="text-2xl font-bold mb-2">15+</h3>
-              <p className="text-white/80">เหรียญรางวัล</p>
+              <h3 className="text-2xl font-bold mb-2">500+</h3>
+              <p className="text-white/80">ลูกค้าพึงพอใจ</p>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-glow">
-              <h3 className="text-2xl font-bold mb-2">8+</h3>
+              <h3 className="text-2xl font-bold mb-2">10+</h3>
               <p className="text-white/80">ปีประสบการณ์</p>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-glow">
-              <h3 className="text-2xl font-bold mb-2">25+</h3>
-              <p className="text-white/80">การแข่งขัน</p>
+              <h3 className="text-2xl font-bold mb-2">50+</h3>
+              <p className="text-white/80">ผลิตภัณฑ์</p>
             </div>
           </div>
         </div>

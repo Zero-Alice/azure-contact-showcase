@@ -5,26 +5,26 @@ const About = () => {
   const skills = [
     {
       icon: <Trophy className="h-8 w-8" />,
-      title: 'ผลงานการแข่งขัน',
-      description: 'เหรียญทอง, เหรียญเงิน, เหรียญทองแดง',
+      title: 'อุปกรณ์กีฬา',
+      description: 'ลูกบอล, ไม้แบด, รองเท้า, เสื้อผ้า',
       color: 'text-primary'
     },
     {
       icon: <Target className="h-8 w-8" />,
-      title: 'ความแม่นยำ',
-      description: 'การควบคุมลูกบอล, การเซ็ตเป้าหมาย',
+      title: 'คุณภาพสูง',
+      description: 'มาตรฐานสากล, วัสดุดี, ทนทาน',
       color: 'text-secondary'
     },
     {
       icon: <Dumbbell className="h-8 w-8" />,
-      title: 'การฝึกซ้อม',
-      description: 'ความแข็งแกร่ง, ความอดทน, เทคนิค',
+      title: 'บริการฝึกซ้อม',
+      description: 'โค้ช, หลักสูตร, สถานที่ฝึก',
       color: 'text-primary'
     },
     {
       icon: <Medal className="h-8 w-8" />,
-      title: 'การสอน',
-      description: 'ถ่ายทอดประสบการณ์, พัฒนานักกีฬา',
+      title: 'รางวัลความเป็นเลิศ',
+      description: 'ผลิตภัณฑ์ยอดเยี่ยม, รับรองคุณภาพ',
       color: 'text-secondary'
     }
   ];
@@ -36,10 +36,10 @@ const About = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
-              เกี่ยวกับนักกีฬา
+              เกี่ยวกับ H3SPORT
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              นักกีฬามืออาชีพที่มีความหลงใหลในการแข่งขันและมุ่งมั่นสู่ความเป็นเลิศในสนามกีฬา
+              แบรนด์กีฬาที่มุ่งมั่นพัฒนาและส่งเสริมวงการกีฬา ด้วยผลิตภัณฑ์และบริการที่มีคุณภาพระดับมาตรฐานสากล
             </p>
           </div>
 
@@ -47,20 +47,20 @@ const About = () => {
             {/* Left Content */}
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-foreground">
-                ความเป็นมาและประสบการณ์
+                ประวัติและวิสัยทัศน์
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  ฉันเป็นนักกีฬามืออาชีพที่มีประสบการณ์มากกว่า 8 ปี ในสนามแข่งขันระดับชาติและนานาชาติ 
-                  โดยได้ร่วมแข่งขันในรายการต่างๆ มากมาย
+                  H3SPORT เป็นแบรนด์กีฬาที่ก่อตั้งขึ้นด้วยความมุ่งมั่นในการส่งเสริมและพัฒนาวงการกีฬาไทย 
+                  ด้วยประสบการณ์กว่า 10 ปี ในอุตสาหกรรมกีฬา
                 </p>
                 <p>
-                  ฉันเชี่ยวชาญในเทคนิคการเล่นที่หลากหลาย มีความแข็งแกร่งทางร่างกายและจิตใจ 
-                  พร้อมทั้งมีการเตรียมความพร้อมที่เป็นระบบและมีประสิทธิภาพ
+                  เราเชี่ยวชาญในการผลิตและจำหน่ายอุปกรณ์กีฬาคุณภาพสูง รวมถึงให้บริการฝึกอบรม 
+                  และสร้างสรรค์โปรแกรมการออกกำลังกายที่เหมาะสมกับแต่ละบุคคล
                 </p>
                 <p>
-                  นอกจากการแข่งขันแล้ว ฉันยังให้ความสำคัญกับการถ่ายทอดประสบการณ์และความรู้ 
-                  ให้กับนักกีฬารุ่นใหม่เพื่อพัฒนาวงการกีฬาของประเทศ
+                  วิสัยทัศน์ของเราคือการเป็นแบรนด์กีฬาชั้นนำที่สร้างแรงบันดาลใจ 
+                  และส่งเสริมให้คนไทยมีสุขภาพที่ดีผ่านการกีฬาและการออกกำลังกาย
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ const About = () => {
                   <div className="w-32 h-32 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <Trophy className="h-16 w-16 text-white" />
                   </div>
-                  <p className="text-lg font-medium">รูปโปรไฟล์นักกีฬา</p>
+                  <p className="text-lg font-medium">โลโก้ H3SPORT</p>
                 </div>
               </div>
             </div>
