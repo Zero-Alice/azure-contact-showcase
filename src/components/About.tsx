@@ -1,30 +1,30 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Code, Palette, Smartphone, Zap } from 'lucide-react';
+import { Trophy, Target, Dumbbell, Medal } from 'lucide-react';
 
 const About = () => {
   const skills = [
     {
-      icon: <Code className="h-8 w-8" />,
-      title: 'Frontend Development',
-      description: 'React, TypeScript, Next.js, Tailwind CSS',
+      icon: <Trophy className="h-8 w-8" />,
+      title: 'ผลงานการแข่งขัน',
+      description: 'เหรียญทอง, เหรียญเงิน, เหรียญทองแดง',
       color: 'text-primary'
     },
     {
-      icon: <Palette className="h-8 w-8" />,
-      title: 'UI/UX Design',
-      description: 'Figma, Adobe XD, Responsive Design',
+      icon: <Target className="h-8 w-8" />,
+      title: 'ความแม่นยำ',
+      description: 'การควบคุมลูกบอล, การเซ็ตเป้าหมาย',
       color: 'text-secondary'
     },
     {
-      icon: <Smartphone className="h-8 w-8" />,
-      title: 'Mobile Development',
-      description: 'React Native, Flutter, PWA',
+      icon: <Dumbbell className="h-8 w-8" />,
+      title: 'การฝึกซ้อม',
+      description: 'ความแข็งแกร่ง, ความอดทน, เทคนิค',
       color: 'text-primary'
     },
     {
-      icon: <Zap className="h-8 w-8" />,
-      title: 'Performance',
-      description: 'Optimization, SEO, Core Web Vitals',
+      icon: <Medal className="h-8 w-8" />,
+      title: 'การสอน',
+      description: 'ถ่ายทอดประสบการณ์, พัฒนานักกีฬา',
       color: 'text-secondary'
     }
   ];
@@ -36,10 +36,10 @@ const About = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
-              เกี่ยวกับฉัน
+              เกี่ยวกับนักกีฬา
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              นักพัฒนาเว็บที่มีความหลงใหลในการสร้างสรรค์ผลงานที่มีคุณภาพและสร้างประสบการณ์ที่ดีให้กับผู้ใช้
+              นักกีฬามืออาชีพที่มีความหลงใหลในการแข่งขันและมุ่งมั่นสู่ความเป็นเลิศในสนามกีฬา
             </p>
           </div>
 
@@ -51,16 +51,16 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  ฉันเป็นนักพัฒนาเว็บที่มีประสบการณ์มากกว่า 3 ปี ในการสร้างเว็บไซต์และแอปพลิเคชันสำหรับธุรกิจขนาดต่างๆ 
-                  ตั้งแต่สตาร์ทอัพไปจนถึงบริษัทขนาดใหญ่
+                  ฉันเป็นนักกีฬามืออาชีพที่มีประสบการณ์มากกว่า 8 ปี ในสนามแข่งขันระดับชาติและนานาชาติ 
+                  โดยได้ร่วมแข่งขันในรายการต่างๆ มากมาย
                 </p>
                 <p>
-                  ฉันเชี่ยวชาญในการใช้เทคโนโลยีสมัยใหม่ เช่น React, TypeScript, และ Node.js 
-                  เพื่อสร้างผลงานที่มีประสิทธิภาพสูงและตอบสนองความต้องการของลูกค้าได้อย่างแม่นยำ
+                  ฉันเชี่ยวชาญในเทคนิคการเล่นที่หลากหลาย มีความแข็งแกร่งทางร่างกายและจิตใจ 
+                  พร้อมทั้งมีการเตรียมความพร้อมที่เป็นระบบและมีประสิทธิภาพ
                 </p>
                 <p>
-                  นอกจากการเขียนโปรแกรมแล้ว ฉันยังให้ความสำคัญกับการออกแบบ UX/UI 
-                  เพื่อให้ผู้ใช้ได้รับประสบการณ์ที่ดีที่สุดจากผลงานที่ฉันสร้าง
+                  นอกจากการแข่งขันแล้ว ฉันยังให้ความสำคัญกับการถ่ายทอดประสบการณ์และความรู้ 
+                  ให้กับนักกีฬารุ่นใหม่เพื่อพัฒนาวงการกีฬาของประเทศ
                 </p>
               </div>
             </div>
@@ -70,9 +70,9 @@ const About = () => {
               <div className="w-full h-80 bg-gradient-primary rounded-2xl shadow-elegant flex items-center justify-center">
                 <div className="text-white text-center">
                   <div className="w-32 h-32 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Code className="h-16 w-16 text-white" />
+                    <Trophy className="h-16 w-16 text-white" />
                   </div>
-                  <p className="text-lg font-medium">รูปโปรไฟล์</p>
+                  <p className="text-lg font-medium">รูปโปรไฟล์นักกีฬา</p>
                 </div>
               </div>
             </div>
