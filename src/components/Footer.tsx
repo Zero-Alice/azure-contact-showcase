@@ -1,27 +1,28 @@
 import { Heart } from 'lucide-react';
-import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-content">
-          <div className="footer-brand">
-            <h3 className="footer-logo">H3SPORT</h3>
-            <p className="footer-tagline">
-              แบรนด์กีฬาที่มุ่งมั่นพัฒนาวงการกีฬาไทย
-            </p>
-          </div>
-          
-          <div className="footer-info">
-            <p className="footer-love">
-              สร้างด้วย
-              <Heart className="footer-heart" />
-              และความใส่ใจ
-            </p>
-            <p className="footer-copyright">
-              © 2024 H3SPORT. All rights reserved.
-            </p>
+    <footer className="bg-primary text-white py-8">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="text-center md:text-left mb-4 md:mb-0">
+              <h3 className="text-2xl font-bold mb-2">SportFolio</h3>
+              <p className="text-white/80">
+                มุ่งมั่นสู่ความเป็นเลิศในสนามกีฬา
+              </p>
+            </div>
+            
+            <div className="text-center md:text-right">
+              <p className="text-white/80 flex items-center justify-center md:justify-end">
+                สร้างด้วย
+                <Heart className="h-4 w-4 mx-1 text-red-400" />
+                และความมุ่งมั่น
+              </p>
+              <p className="text-white/60 text-sm mt-1">
+                © 2024 SportFolio. All rights reserved.
+              </p>
+            </div>
           </div>
         </div>
       </div>
